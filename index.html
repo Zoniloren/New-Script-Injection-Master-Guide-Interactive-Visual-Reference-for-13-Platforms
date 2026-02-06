@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Injection Guide - Interactive Manual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Script Injection Master Guide</h1>
+            <p class="subtitle">Interactive Visual Reference for 13 Platforms</p>
+        </header>
+
+        <div class="main-content">
+            <div class="tabs">
+                <button class="tab active" data-tab="overview">📋 Overview</button>
+                <button class="tab" data-tab="wordpress">⚡ WordPress</button>
+                <button class="tab" data-tab="segment">📊 Segment</button>
+                <button class="tab" data-tab="shopify">🛍️ Shopify</button>
+                <button class="tab" data-tab="wix">🎨 Wix</button>
+                <button class="tab" data-tab="squarespace">⬛ Squarespace</button>
+                <button class="tab" data-tab="webflow">🌊 Webflow</button>
+                <button class="tab" data-tab="hubspot">🧡 HubSpot</button>
+                <button class="tab" data-tab="weebly">🔷 Weebly</button>
+                <button class="tab" data-tab="godaddy">🌐 GoDaddy</button>
+                <button class="tab" data-tab="duda">🏢 Duda</button>
+                <button class="tab" data-tab="hostinger">🚀 Hostinger</button>
+                <button class="tab" data-tab="custom">💻 Custom</button>
+            </div>
+
+            <!-- OVERVIEW TAB -->
+            <div class="tab-content active" id="overview">
+                <div class="platform-header">
+                    <div class="platform-icon">📊</div>
+                    <div>
+                        <h2>Platform Comparison & Quick Reference</h2>
+                        <p>Choose the best platform for your needs</p>
+                    </div>
+                </div>
+
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Platform</th>
+                            <th>Ease of Use</th>
+                            <th>Flexibility</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>WordPress</strong></td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>High</td>
+                            <td>Blogs, Business</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Segment</strong></td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td>Very High</td>
+                            <td>Analytics Hub</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Shopify</strong></td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>Medium</td>
+                            <td>E-commerce</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Wix</strong></td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td>Medium</td>
+                            <td>Beginners</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Squarespace</strong></td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td>Medium</td>
+                            <td>Creative Portfolio</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Webflow</strong></td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>High</td>
+                            <td>Designers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HubSpot</strong></td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>High</td>
+                            <td>Marketing Automation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Weebly</strong></td>
+                            <td>⭐⭐⭐⭐⭐</td>
+                            <td>Low</td>
+                            <td>Small Business</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GoDaddy</strong></td>
+                            <td>⭐⭐⭐</td>
+                            <td>Low</td>
+                            <td>Quick Sites</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Duda</strong></td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>Medium</td>
+                            <td>Agencies</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Hostinger</strong></td>
+                            <td>⭐⭐⭐⭐</td>
+                            <td>High</td>
+                            <td>Budget Hosting</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Custom HTML</strong></td>
+                            <td>⭐⭐</td>
+                            <td>Very High</td>
+                            <td>Developers</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3 style="margin-top: 40px; margin-bottom: 20px;">🎯 Common Code Examples</h3>
+                <div class="quick-links">
+                    <div class="quick-link" data-code="ga4">📊 Google Analytics</div>
+                    <div class="quick-link" data-code="fbpixel">📘 Facebook Pixel</div>
+                    <div class="quick-link" data-code="gtm">🏷️ Tag Manager</div>
+                    <div class="quick-link" data-code="hotjar">🔥 Hotjar</div>
+                    <div class="quick-link" data-code="intercom">💬 Intercom Chat</div>
+                </div>
+
+                <div id="codeExample" style="display:none; margin-top: 30px;">
+                    <h3>📝 Code Example:</h3>
+                    <div class="code-block">
+                        <pre><code id="codeDisplay"></code></pre>
+                    </div>
+                </div>
+
+                <div class="pro-tip">
+                    <strong>PRO TIP:</strong> Always test scripts in staging before production. Use F12 DevTools to verify loading.
+                </div>
+            </div>
+
+            <!-- WORDPRESS TAB -->
+            <div class="tab-content" id="wordpress">
+                <div class="platform-header">
+                    <div class="platform-icon">⚡</div>
+                    <div>
+                        <h2>WordPress Script Injection</h2>
+                        <p>Multiple methods for flexibility</p>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-title">Method 1: Header/Footer Plugin</div>
+                    <span class="method-badge">EASIEST</span>
+                    
+                    <div class="visual-path">
+                        <span class="path-item">Dashboard</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Plugins</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Add New</span>
+                    </div>
+
+                    <h4>Steps:</h4>
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        Install "Insert Headers and Footers"
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        Go to Settings → Insert Headers and Footers
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        Paste code in Header or Footer section
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        Save and test
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <h4>✅ WordPress Checklist:</h4>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Backup site first
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Test in staging
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Clear cache
+                    </label>
+                </div>
+            </div>
+
+            <!-- SHOPIFY TAB -->
+            <div class="tab-content" id="shopify">
+                <div class="platform-header">
+                    <div class="platform-icon">🛍️</div>
+                    <div>
+                        <h2>Shopify Script Injection</h2>
+                        <p>E-commerce implementation</p>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-title">Theme Customization</div>
+                    <span class="method-badge">RECOMMENDED</span>
+                    
+                    <div class="visual-path">
+                        <span class="path-item">Online Store</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Themes</span>
+                        &l...
