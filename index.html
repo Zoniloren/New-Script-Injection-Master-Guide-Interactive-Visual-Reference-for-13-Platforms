@@ -219,4 +219,466 @@
                         <span class="path-item">Online Store</span>
                         <span class="path-arrow">→</span>
                         <span class="path-item">Themes</span>
-                        &l...
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Edit Code</span>
+                    </div>
+
+                    <div class="pro-tip">
+                        <strong>PRO TIP:</strong> Use Liquid conditionals like {% if template == 'product' %} for page-specific script loading.
+                    </div>
+                </div>
+            </div>
+
+            <!-- SEGMENT TAB -->
+            <div class="tab-content" id="segment">
+                <div class="platform-header">
+                    <div class="platform-icon">📊</div>
+                    <div>
+                        <h2>Segment Analytics Platform</h2>
+                        <p>Central hub for all analytics</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-title">Segment Installation</div>
+                    <span class="method-badge">POWERFUL</span>
+                    <p>Install Segment snippet once, manage all analytics tools from one dashboard. Connect Google Analytics, Facebook Pixel, Mixpanel and 300+ integrations.</p>
+                    
+                    <div class="visual-path">
+                        <span class="path-item">Segment Dashboard</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Sources</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Add Source</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Website</span>
+                    </div>
+
+                    <div class="alert alert-success">
+                        <strong>PRO TIP:</strong> One script to rule them all! Add/remove analytics tools without touching your website code.
+                    </div>
+                </div>
+            </div>
+
+            <!-- WIX TAB -->
+            <div class="tab-content" id="wix">
+                <div class="platform-header">
+                    <div class="platform-icon">🎨</div>
+                    <div>
+                        <h2>Wix Script Injection</h2>
+                        <p>Drag-and-drop builder with custom code</p>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-title">Custom Code Panel</div>
+                    <span class="method-badge">EASIEST</span>
+                    
+                    <div class="visual-path" style="display: flex; align-items: center; gap: 10px; padding: 20px; background: #f8fafc; border-radius: 8px; margin: 20px 0;">
+                        <span class="path-item" style="padding: 10px 20px; background: white; border: 2px solid #6366f1; border-radius: 6px; font-weight: 600; color: #6366f1;">Settings</span>
+                        <span class="path-arrow" style="color: #6366f1; font-size: 20px; font-weight: 700;">→</span>
+                        <span class="path-item" style="padding: 10px 20px; background: white; border: 2px solid #6366f1; border-radius: 6px; font-weight: 600; color: #6366f1;">Custom Code</span>
+                        <span class="path-arrow" style="color: #6366f1; font-size: 20px; font-weight: 700;">→</span>
+                        <span class="path-item" style="padding: 10px 20px; background: white; border: 2px solid #6366f1; border-radius: 6px; font-weight: 600; color: #6366f1;">Add Custom Code</span>
+                    </div>
+
+                    <h4>Step-by-Step Instructions:</h4>
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        Open your Wix site dashboard
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        Go to Settings in left sidebar
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        Click on Custom Code
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        Click the "+ Add Custom Code" button
+                    </div>
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        Paste your tracking script code
+                    </div>
+                    <div class="step">
+                        <span class="step-number">6</span>
+                        Choose location: Head or Body - End
+                    </div>
+                    <div class="step">
+                        <span class="step-number">7</span>
+                        Select "All pages" or specific pages
+                    </div>
+                    <div class="step">
+                        <span class="step-number">8</span>
+                        Click Apply and then Publish your site
+                    </div>
+
+                    <div class="code-block">
+<pre><code>&lt;!-- Example: Google Analytics --&gt;
+&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-XXX"&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+&lt;/script&gt;</code></pre>
+                    </div>
+                    
+                    <div class="alert alert-warning">
+                        <strong>⚠️ Important Note:</strong> Custom code only works on PUBLISHED sites! Scripts will NOT load in preview/editor mode.
+                    </div>
+
+                    <div class="pro-tip">
+                        <strong>PRO TIP:</strong> Use "Head" for analytics and tracking scripts. Use "Body - end" for chat widgets and heavy scripts to improve page load speed.
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <h4>✅ Wix Implementation Checklist:</h4>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Script added in Custom Code section
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Selected correct location (Head/Body-end)
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Chose "All pages" or specific pages
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Site PUBLISHED (not just saved)
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Tested in incognito/private browsing
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Verified script loads with F12 DevTools
+                    </label>
+                </div>
+
+                <div class="alert alert-success">
+                    <strong>✅ Best Practice:</strong> Always test scripts on a staging/development version first before publishing to your live site.
+                </div>
+            </div>
+
+            <!-- SQUARESPACE TAB -->
+            <div class="tab-content" id="squarespace">
+                <div class="platform-header">
+                    <div class="platform-icon">⬛</div>
+                    <div>
+                        <h2>Squarespace Code Injection</h2>
+                        <p>Clean implementation</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-title">Code Injection</div>
+                    <span class="method-badge">SIMPLE</span>
+                    
+                    <div class="visual-path">
+                        <span class="path-item">Settings</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Advanced</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Code Injection</span>
+                    </div>
+
+                    <h4>Steps:</h4>
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        Log into your Squarespace account
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        Go to Settings (gear icon)
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        Click Advanced
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        Select Code Injection
+                    </div>
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        Paste code in Header or Footer section
+                    </div>
+                    <div class="step">
+                        <span class="step-number">6</span>
+                        Click Save
+                    </div>
+                    <div class="step">
+                        <span class="step-number">7</span>
+                        Refresh your site to test
+                    </div>
+
+                    <div class="alert alert-info">
+                        <strong>💡 TIP:</strong> Header scripts load before page content. Footer scripts load after - better for performance.
+                    </div>
+
+                    <div class="pro-tip">
+                        <strong>PRO TIP:</strong> For page-specific scripts, go to Pages → Click page settings (gear) → Advanced → Page Header Code Injection
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <h4>Squarespace Checklist:</h4>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Code added to correct section (Header/Footer)
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Changes saved
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Site refreshed
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Verified with F12 DevTools
+                    </label>
+                </div>
+            </div>
+
+            <!-- WEBFLOW TAB -->
+            <div class="tab-content" id="webflow">
+                <div class="platform-header">
+                    <div class="platform-icon">🌊</div>
+                    <div>
+                        <h2>Webflow Custom Code</h2>
+                        <p>Designer-friendly</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-title">Project Settings</div>
+                    <span class="method-badge">POWERFUL</span>
+                    
+                    <div class="visual-path">
+                        <span class="path-item">Designer</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Project Settings</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Custom Code</span>
+                    </div>
+
+                    <div class="pro-tip">
+                        <strong>PRO TIP:</strong> Press "D" keyboard shortcut to quickly access Designer mode and project settings.
+                    </div>
+                </div>
+            </div>
+
+            <!-- HUBSPOT TAB -->
+            <div class="tab-content" id="hubspot">
+                <div class="platform-header">
+                    <div class="platform-icon">🧡</div>
+                    <div>
+                        <h2>HubSpot CMS</h2>
+                        <p>Marketing automation platform</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-title">Site Header HTML</div>
+                    <span class="method-badge">GLOBAL</span>
+                    
+                    <div class="visual-path">
+                        <span class="path-item">Settings</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Website</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Pages</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Site Header HTML</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- WEEBLY TAB -->
+            <div class="tab-content" id="weebly">
+                <div class="platform-header">
+                    <div class="platform-icon">🔷</div>
+                    <div>
+                        <h2>Weebly Website Builder</h2>
+                        <p>Small business focused</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-title">SEO Settings</div>
+                    <span class="method-badge">SIMPLE</span>
+                    
+                    <div class="visual-path">
+                        <span class="path-item">Settings</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">SEO</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Header Code</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GODADDY TAB -->
+            <div class="tab-content" id="godaddy">
+                <div class="platform-header">
+                    <div class="platform-icon">🌐</div>
+                    <div>
+                        <h2>GoDaddy Website Builder</h2>
+                        <p>Limited customization options</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-title">Header & Footer Code</div>
+                    <span class="method-badge">LIMITED</span>
+                    <p>GoDaddy Website Builder has very limited script injection options.</p>
+                    
+                    <div class="alert alert-warning">
+                        <strong>⚠️ WARNING:</strong> GoDaddy Builder is very restrictive. Consider using WordPress on GoDaddy hosting instead for full control.
+                    </div>
+                </div>
+            </div>
+
+            <!-- DUDA TAB -->
+            <div class="tab-content" id="duda">
+                <div class="platform-header">
+                    <div class="platform-icon">🏢</div>
+                    <div>
+                        <h2>Duda Website Builder</h2>
+                        <p>Professional agency platform</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-title">Custom Code Widget</div>
+                    <span class="method-badge">PROFESSIONAL</span>
+                    
+                    <div class="visual-path">
+                        <span class="path-item">Site Settings</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Advanced</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Custom Code</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HOSTINGER TAB -->
+            <div class="tab-content" id="hostinger">
+                <div class="platform-header">
+                    <div class="platform-icon">🚀</div>
+                    <div>
+                        <h2>Hostinger Script Injection</h2>
+                        <p>Hosting control methods</p>
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-title">Method 1: Website Builder</div>
+                    <span class="method-badge">EASIEST</span>
+                    
+                    <div class="visual-path">
+                        <span class="path-item">hPanel</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Website</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Edit Website</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Settings</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">Integrations</span>
+                    </div>
+
+                    <h4>Steps:</h4>
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        Log into Hostinger hPanel
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        Click Website in left menu
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        Click Edit website
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        Go to Settings → Integrations
+                    </div>
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        Choose Custom code
+                    </div>
+                    <div class="step">
+                        <span class="step-number">6</span>
+                        Paste script in Header or Footer
+                    </div>
+                    <div class="step">
+                        <span class="step-number">7</span>
+                        Save and Publish
+                    </div>
+
+                    <div class="alert alert-info">
+                        <strong>TIP:</strong> Use Header for analytics, Footer for chat widgets
+                    </div>
+                </div>
+
+                <div class="method-card">
+                    <div class="method-title">Method 2: File Manager (WordPress)</div>
+                    <span class="method-badge advanced">ADVANCED</span>
+                    
+                    <div class="visual-path">
+                        <span class="path-item">hPanel</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">File Manager</span>
+                        <span class="path-arrow">→</span>
+                        <span class="path-item">public_html</span>
+                    </div>
+
+                    <div class="alert alert-warning">
+                        <strong>WARNING:</strong> Changes lost on theme updates. Use plugin instead!
+                    </div>
+                </div>
+
+                <div class="checklist">
+                    <h4>Hostinger Checklist:</h4>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Backup site first
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Clear cache after changes
+                    </label>
+                    <label class="checklist-item">
+                        <input type="checkbox"> Test with F12 DevTools
+                    </label>
+                </div>
+
+                <div class="alert alert-success">
+                    <strong>BEST PRACTICE:</strong> Use Website Builder Integrations for safety
+                </div>
+            </div>
+
+            <!-- CUSTOM TAB -->
+            <div class="tab-content" id="custom">
+                <div class="platform-header">
+                    <div class="platform-icon">💻</div>
+                    <div>
+                        <h2>Custom HTML/React/Next.js</h2>
+                        <p>Full developer control</p>
+                    </div>
+                </div>
+                <div class="method-card">
+                    <div class="method-title">Plain HTML</div>
+                    <span class="method-badge">BASIC</span>
+                    <div class="code-block">
+<pre><code>&lt;head&gt;
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Script Injection Master Guide | February 2026</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
